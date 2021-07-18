@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dental Protesi S.n.c.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						
+						<div class="content">
+							<div class="inner">
+								<h1>area insegnanti</h1>
+								<p>Compilando il Form sottostante potrai entrare nella tua area riservata</p>
+							</div>
+						</div>
+						
+						<!-- form area clienti -->
+							<article id="formareaclienti">	
+							
+								<div id="loginbox" class="lightbox" >
+									<div class="horizontal">
+										<div class="vertical">
+											
+											
+										
+										
+											<div class="box">
+											
+												<label for="usarname">Usarname</label>
+												<input type="text" style="margin: 16px; text-align: center" name="name" id="name" placeholder="Inserisci il tuo Usarname" />
+											<br>
+												<label for="password">Password</label>
+												<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Digita la password" />
+												<br>
+												<button id="loginbutton" type="button">Enter</button>
+												<p id="wrongPassword" style="display: none">Digita la password</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+
+
+								<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+								 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+								<script type="text/javascript">
+								"use strict";
+
+
+								function loadPage(pwd) {
+
+									var hash= pwd;
+									hash= Sha1.hash(pwd);
+									var url= hash + "/index.html";
+
+									$.ajax({
+										url : url,
+										dataType : "html",
+										success : function(data) {
+
+											window.location= url;
+
+										},
+										error : function(xhr, ajaxOptions, thrownError) {
+
+
+											parent.location.hash= hash;
+
+											//$("#wrongPassword").show();
+											$("#password").attr("placeholder","Digita la password");
+											$("#password").val("");
+										}
+									});
+								}
+
+
+								$("#loginbutton").on("click", function() {
+									loadPage($("#password").val());
+								});
+								$("#password").keypress(function(e) {
+									if (e.which == 13) {
+
+										loadPage($("#password").val());
+									}
+								});
+								$("#password").focus();
+
+								</script>
+								
+								
+								
+						
+					
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+					
+					<!-- Area Flauti -->	
+							<article id="22ee5d2890ec797c74adce08f5e5a304841382ac">
+								<h3 class="major">Benvenuta Elisa Ceola</h3>
+								<h4>All'interno di questa area a lei riservata troverà documenti ed informazioni che le potranno essere utili</h4>
+								<br>
+								<center><a href="../22ee5d2890ec797c74adce08f5e5a304841382ac.html" class="button">Entra</a></center>
+						
+								
+							</article>	
+							
+						<!-- Area Clarinetti -->	
+							<article id="ef6a0e9bc498892296d073f08064488bc368d734">
+								<h3 class="major">Benvenuta Manuela Cocco</h3>
+								<h4>All'interno di questa area a lei riservata troverà documenti ed informazioni che le potranno essere utili</h4>
+								<br>
+								<center><a href="../ef6a0e9bc498892296d073f08064488bc368d734.html" class="button">Entra</a></center>
+								
+							</article>	
+
+						<!-- Area Sassofoni -->	
+							<article id="b9f6b530f94a0eae8d3c3c68313a48f54aa17b52">
+								<h3 class="major">Benvenuto Riccardo Novella </h3>
+								<h4>All'interno di questa area a lei riservata troverà documenti ed informazioni che le potranno essere utili</h4>
+								<br>
+								<center><a href="../b9f6b530f94a0eae8d3c3c68313a48f54aa17b52.html" class="button">Entra</a></center>
+								
+							</article>
+							
+						<!-- Area Trombe -->	
+							<article id="17872af10c821ad50e77c4d1a6fb40827e147a3c">
+								<h3 class="major">Benvenuto Nicolò Marangon </h3>
+								<h4>All'interno di questa area a lei riservata troverà documenti ed informazioni che le potranno essere utili</h4>
+								<br>
+								<center><a href="../17872af10c821ad50e77c4d1a6fb40827e147a3c.html" class="button">Entra</a></center>
+								
+							</article>	
+							
+						<!-- Area Ottoni -->	
+							<article id="aec4971b48600ae9f7b2f24dca2bf1eda6c52a2c">
+								<h3 class="major">Benvenuto Giorgio Gnatta</h3>
+								<h4>All'interno di questa area a lei riservata troverà documenti ed informazioni che le potranno essere utili</h4>
+								<br>
+								<center><a href="../aec4971b48600ae9f7b2f24dca2bf1eda6c52a2c.html" class="button">Entra</a></center>
+						
+								
+							</article>	
+
+						<!-- Area Percussioni -->	
+							<article id="d7871a8364c21ae2f25cb7d713a417d91324eb9b">
+								<h3 class="major">Benvenuto Andrea Finetto</h3>
+								<h4>All'interno di questa area a lei riservata troverà documenti ed informazioni che le potranno essere utili</h4>
+																<br>
+								<center><a href="../d7871a8364c21ae2f25cb7d713a417d91324eb9b.html" class="button">Entra</a></center>
+						
+								
+							</article>	
+
+						
+													
+						
+							
+
+						
+
+					</div>
+
+				<!-- Footer -->
+						<footer id="footer">
+							<p class="copyright">&copy; All rights reserved.<br>Banda Cittadina di Cornedo Vicentino.<br>Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</footer>
+					
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
